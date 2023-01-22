@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule as áreas </title>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="folha de estilo.css">
+   </head>
+
+ <body>
+   <div class="central">
+                <p>Retângulo</p>
+                <fieldset>
+                    <img src="retangulo.jpg" alt="">
+                <form>
+                <p>Base: <input type="number" name="base" id=""></p>
+                <p>Altura: <input type="number" name="altura" id=""></p>
+                <p><input type="button" value="Calcular" onclick="retângulo(base.value,altura.value)"></p>
+              </form>
+               <p id="r-Retângulo">Resultado</p>
+            </fieldset>
+   
+        <p>Triângulo</p>
+        <fieldset>
+            <img src="imgs/triangulo.jpg" alt="">
+            <form>
+                <p> Base: <input type="number" name="base" id=""> </p>
+                <p>Altura: <input type="number" name="altura" id=""> </p>
+                <p><input type="button" value="Calcular" onclick="triângulo(base.value,altura.value)"></p>
+            </form>
+            <p id="triângulo">Resultado</p>
+    
+        </fieldset>
+
+
+        <p>Losango</p>
+        <fieldset>
+            <img src="imgs/losango.jpg" alt="">
+            <form>
+                <p>Diagonal maior: <input type="number" name="Dmaior" id=""> </p>
+                <p>diagonal menor: <input type="number" name="dmin" id=""> </p>
+                <p><input type="button" value="Calcular" onclick="losango(Dmaior.value,dmin.value)"></p>
+            </form>
+            <p id="losango">Resultado</p>
+        </fieldset>
+
+        <p>Trapezio</p>
+        <fieldset>
+            <img src="imgs/trapezio.jpg" alt="">
+            <form>
+                <p>Base: <input type="number" name="Bmaior" id=""></p>
+                <p>Base menor: <input type="number" name="bmin" id=""> </p>
+                <p>Altura: <input type="number" name="altura" id=""></p>
+                <p><input type="button" value="Calcular" onclick= "trapezio(Bmaior.value,bmin.value, altura.value)"></p>
+            </form>
+            <p id="trapezio">Resultado</p>
+        </fieldset>
+
+        <p>Quadrado</p>
+        <fieldset>
+            <img src="imgs/quadrado.jpg" alt="">
+            <form>
+                <p>Lado: <input type="number" name="Lado" id=""></p>
+                <p><input type="button" value="Calcular" onclick="quadrado(Lado.value)"></p>
+            </form>
+            <p id="quadrado">Resultado</p>
+        </fieldset>
+
+        <p>Circulo</p>
+        <fieldset>
+            <img src="imgs/circulo.jpg" alt="">
+            <form>
+                <p> Raio: <input type="number" name="Raio" id=""></p>
+                <p><input type="button" value="Calcular" onclick="circulo(Raio.value)"></p>
+            </form>
+            <p id="circulo">Resultado</p>
+        </fieldset>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
